@@ -10,12 +10,12 @@ public class prime {
         if (x <= 1){
             return false;
         }
-        int c = 2;
-        while (c * c <= x) {
-            if (x % c == 0){
+        int y = 2;
+        while (y * y <= x) {
+            if (x % y == 0){
                 return false;
             }
-            c++;
+            y++;
         }
         // return c * c > x;/
         return true;
